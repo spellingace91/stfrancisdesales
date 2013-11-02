@@ -270,6 +270,7 @@ footer p {
 	
 	#nav .page {
 		width: 896px;
+		margin: 0 auto;
 	}
 	
 	#nav .page li a {
