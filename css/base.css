@@ -45,7 +45,8 @@ background: url("http://farm4.staticflickr.com/3688/9677610163_b898e3ff7b_b.jpg"
 
 #parish-info {
 	overflow: hidden;
-	padding-bottom: 25px;
+	width: auto;
+	padding: 0 25px;
 }
 
 header h1 {
