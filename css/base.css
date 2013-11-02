@@ -261,6 +261,10 @@ footer p {
 	#nav-mobile {
 		display: none;
 	}
+	
+	#parish-info {
+		max-width: 756px;
+	}
 }
 
 @media (min-width: 978px) {
@@ -285,5 +289,9 @@ footer p {
 	
 	#wrapper section div:last-child {
 		margin-right: 0;
+	}
+	
+	#parish-info {
+		max-width: 1008px;
 	}
 }
