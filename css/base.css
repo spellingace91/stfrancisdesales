@@ -28,6 +28,7 @@ body {
 
 header {
 	display: block;
+	text-align: center;
 	padding-top: 26px;
 	background: #D3CEAA;
 	background: #152737;
@@ -159,14 +160,15 @@ footer p {
 	float: left;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 320px) {
 	.page, #wrapper section {
-		width: 480px;
+		width: 320px;
 		margin: 0 auto 26px;
 	}
 	
-	header {
-		text-align: center;
+	.tel {
+		color: #799AA5;
+		text-decoration: underline;
 	}
 }
 
@@ -196,6 +198,12 @@ footer p {
 	header h3 {
 		float: right;
 		clear: right;
+	}
+	
+	.tel {
+		color: inherit;
+		text-decoration: inherit;
+		cursor: default;
 	}
 	
 	#nav .page {
