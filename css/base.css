@@ -29,7 +29,6 @@ body {
 header {
 	display: block;
 	padding-top: 26px;
-	text-align: center;
 	background: #D3CEAA;
 	background: #152737;
 	overflow: hidden;
@@ -165,12 +164,20 @@ footer p {
 		width: 480px;
 		margin: 0 auto 26px;
 	}
+	
+	header {
+		text-align: center;
+	}
 }
 
 @media (min-width: 756px) {
 	.page, #wrapper section {
 		width: 756px;
 		margin: 0 auto 26px;
+	}
+	
+	header {
+		text-align: right;
 	}
 	
 	#parish-name {
@@ -271,6 +278,10 @@ footer p {
 	.page, #wrapper section {
 		width: 1008px;
 		margin: 0 auto 26px;
+	}
+	
+	header {
+		text-align: right;
 	}
 	
 	#nav .page {

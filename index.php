@@ -28,8 +28,7 @@
 				</div>
 				
 				<div id="parish-contact">
-					<h3>1375 S. Camino Seco<br/>Tucson, AZ 85710</h3>
-					<h3>(520) 885-5908</h3>
+					<h3>1375 S. Camino Seco<br/>Tucson, AZ 85710<br />(520) 885-5908</h3>
 				</div>
 			</div>
 			
