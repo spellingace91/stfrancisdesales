@@ -16,6 +16,9 @@
 		
 		<link href='http://fonts.googleapis.com/css?family=Lusitana' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,500' rel='stylesheet' type='text/css'>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/backstretch.js"></script>
 	</head>
 	<body>
 		<header>
@@ -98,5 +101,8 @@
 				<p>&copy; 2013 St. Francis de Sales Parish</p>
 			</div>
 		</footer>
+		<script>
+			$("body").backstretch("http://3.bp.blogspot.com/-3nUTHg6k7-4/UEHjMXyCKZI/AAAAAAAALIw/qxZDRHnFf5M/s1600/IMG_1395.jpg");
+		</script>
 	</body>
 </html>
