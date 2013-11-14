@@ -12,7 +12,6 @@ body {
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 26px;
-	/* background: #872434 url('http://fc07.deviantart.net/fs71/f/2012/156/5/c/eucharist_by_art_de_viant-d52czdm.jpg') no-repeat top center fixed; */
 }
 
 #wrapper {
@@ -36,14 +35,6 @@ header {
 	background: #D3CEAA;
 	background: rgba(21, 40, 57, 0.8) /* #152839 */;
 	overflow: hidden;
-	/*
-background: url("http://farm4.staticflickr.com/3688/9677610163_b898e3ff7b_b.jpg") no-repeat center bottom fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 400px;
-*/
 }
 
 #parish-info {
@@ -151,7 +142,14 @@ section p {
 }
 
 footer {
-	background: #9a2828;
+	background: #9a2828; /* Old browsers */
+	background: -moz-linear-gradient(top,  #9a2828 0%, #862323 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9a2828), color-stop(100%,#862323)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #9a2828 0%,#862323 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #9a2828 0%,#862323 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #9a2828 0%,#862323 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #9a2828 0%,#862323 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9a2828', endColorstr='#862323',GradientType=0 ); /* IE6-9 */
 	padding: 26px 0;
 	text-align: center;
 }
@@ -214,7 +212,8 @@ footer p {
 	
 	#nav .page {
 		width: 743px;
-		margin: 0 auto 54px;
+		/* margin: 0 auto 54px; */
+		margin: 0 auto;
 		position: relative;
 	}
 	
