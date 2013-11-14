@@ -12,13 +12,16 @@ body {
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 26px;
+	/* background: #872434 url('http://fc07.deviantart.net/fs71/f/2012/156/5/c/eucharist_by_art_de_viant-d52czdm.jpg') no-repeat top center fixed; */
 }
 
 #wrapper {
 	width: 100%;
 	margin: 0 auto;
-	background: #fbf7e4;
+	/*
+background: #fbf7e4;
 	background: #FFFFF0;
+*/
 }
 
 .page {
@@ -31,7 +34,7 @@ header {
 	text-align: center;
 	padding-top: 26px;
 	background: #D3CEAA;
-	background: #152737;
+	background: rgba(21, 40, 57, 0.8) /* #152839 */;
 	overflow: hidden;
 	/*
 background: url("http://farm4.staticflickr.com/3688/9677610163_b898e3ff7b_b.jpg") no-repeat center bottom fixed; 
@@ -175,6 +178,9 @@ footer p {
 @media (min-width: 756px) {
 	.page, #wrapper section {
 		width: 756px;
+	}
+	
+	.page {
 		margin: 0 auto 26px;
 	}
 	
@@ -237,29 +243,31 @@ footer p {
 		text-align: center;
 		letter-spacing: 1px;
 		color: #FFFFF0;
-		width: 105px;
-		-webkit-transition: background .05s ease-out;  
-		-moz-transition: background .05s ease-out;  
-		-o-transition: background .05s ease-out;  
-		transition: background .05s ease-out;
+		width: 104px;
+		border-left: 1px solid #2B4969;
+	}
+	
+	#nav .page li:last-child a {
+		border-right: 1px solid #2B4969;
 	}
 	
 	#nav .page li a:hover {
 		background: #424242;
 		background: #8E001C;
 		background: #799AA5;
+		background: #FFFFF0;
+		color: #2B4E69;
 		/* background: #9A2828; */
 		/* background: #763E3C; */
-		-webkit-transition: background .05s ease-out;  
-		-moz-transition: background .05s ease-out;  
-		-o-transition: background .05s ease-out;  
-		transition: background .05s ease-out;
 		/* box-shadow: rgba(0,0,0,0.4) 0 0 6px; */
 	}
 	
 	#wrapper section {
-		padding-top: 5em;
+		/*
+padding-top: 5em;
 		margin-top: -3em;
+*/
+		margin: 25px auto;
 		overflow: hidden;
 	}
 	
@@ -285,7 +293,14 @@ footer p {
 @media (min-width: 978px) {
 	.page, #wrapper section {
 		width: 1008px;
+	}
+	
+	.page {
 		margin: 0 auto 26px;
+	}
+	
+	#wrapper section {
+		margin: 25px auto;
 	}
 	
 	header {
@@ -298,7 +313,7 @@ footer p {
 	}
 	
 	#nav .page li a {
-		width: 128px;
+		width: 126px;
 	}
 	
 	#wrapper section div {
