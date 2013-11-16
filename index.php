@@ -21,25 +21,62 @@
 		<script src="js/backstretch.js"></script>
 	</head>
 	<body>
-		<header>
-			<div class="page" id="parish-info">
-				<div id="parish-name">
-					<h1>
-						<a href="#">St. Francis de Sales Parish</a>
-					</h1>
-					<h2>A Catholic Church in the Diocese of Tucson</h2>
+		<div id="background-wrap">
+			<header>
+				<div class="page" id="parish-info">
+					<div id="parish-name">
+						<h1>
+							<a href="#">St. Francis de Sales Parish</a>
+						</h1>
+						<h2>A Catholic Church in the Diocese of Tucson</h2>
+					</div>
+					
+					<div id="parish-contact">
+						<h3>1375 S. Camino Seco<br/>Tucson, AZ 85710<br /><a href="tel:1-520-885-5908" class="tel">(520) 885-5908</a></h3>
+					</div>
 				</div>
 				
-				<div id="parish-contact">
-					<h3>1375 S. Camino Seco<br/>Tucson, AZ 85710<br /><a href="tel:1-520-885-5908" class="tel">(520) 885-5908</a></h3>
+				<div id="nav">
+					<ul class="page">
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">Sacraments</a>
+						</li>
+						<li>
+							<a href="#">Ministries</a>
+						</li>
+						<li>
+							<a href="#">Resources</a>
+						</li>
+						<li>
+							<a href="#">Giving</a>
+						</li>
+						<li>
+							<a href="#">About</a>
+						</li>
+						<li>
+							<a href="#">Contact</a>
+						</li>
+					</ul>
 				</div>
+			</header>
+			<div id="wrapper">
+				<section>
+					<div>
+						<p>First thing</p>
+					</div>
+					<div>
+						<p>Second thing</p>
+					</div>
+					<div>
+						<p>Some stuff here</p>
+					</div>
+				</section>
 			</div>
-			
-			<div id="nav">
+			<div id="nav-mobile">
 				<ul class="page">
-					<li>
-						<a href="#">Home</a>
-					</li>
 					<li>
 						<a href="#">Sacraments</a>
 					</li>
@@ -60,41 +97,6 @@
 					</li>
 				</ul>
 			</div>
-		</header>
-		<div id="wrapper">
-			<section>
-				<div>
-					<p>First thing</p>
-				</div>
-				<div>
-					<p>Second thing</p>
-				</div>
-				<div>
-					<p>Some stuff here</p>
-				</div>
-			</section>
-		</div>
-		<div id="nav-mobile">
-			<ul class="page">
-				<li>
-					<a href="#">Sacraments</a>
-				</li>
-				<li>
-					<a href="#">Ministries</a>
-				</li>
-				<li>
-					<a href="#">Resources</a>
-				</li>
-				<li>
-					<a href="#">Giving</a>
-				</li>
-				<li>
-					<a href="#">About</a>
-				</li>
-				<li>
-					<a href="#">Contact</a>
-				</li>
-			</ul>
 		</div>
 		<footer>
 			<div class="page">
@@ -102,7 +104,7 @@
 			</div>
 		</footer>
 		<script>
-			$("body").backstretch("http://3.bp.blogspot.com/-3nUTHg6k7-4/UEHjMXyCKZI/AAAAAAAALIw/qxZDRHnFf5M/s1600/IMG_1395.jpg");
+			$("#background-wrap").backstretch("http://3.bp.blogspot.com/-3nUTHg6k7-4/UEHjMXyCKZI/AAAAAAAALIw/qxZDRHnFf5M/s1600/IMG_1395.jpg");
 		</script>
 	</body>
 </html>
