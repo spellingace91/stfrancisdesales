@@ -14,6 +14,8 @@
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/base.css" />
 		
+		<?php include("inc/functions.php"); ?>
+		
 		<link href='http://fonts.googleapis.com/css?family=Lusitana' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500' rel='stylesheet' type='text/css'>
 		
@@ -63,7 +65,7 @@
 		</header>
 		<div id="wrapper">
 		  <div class="wrapper-section" id="mass-times-area">
-		      <h2>Mass Times</h2>
+		      <h2><?php adoration_schedule(); ?></h2>
 		  </div>
 		  
 		  <div class="wrapper-section" id="content-area">
