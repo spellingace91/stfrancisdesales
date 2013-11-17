@@ -15,68 +15,31 @@
 		<link rel="stylesheet" href="css/base.css" />
 		
 		<link href='http://fonts.googleapis.com/css?family=Lusitana' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,500' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500' rel='stylesheet' type='text/css'>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script src="js/backstretch.js"></script>
 	</head>
 	<body>
-		<div id="background-wrap">
-			<header>
-				<div class="page" id="parish-info">
-					<div id="parish-name">
-						<h1>
-							<a href="#">St. Francis de Sales Parish</a>
-						</h1>
-						<h2>A Catholic Church in the Diocese of Tucson</h2>
-					</div>
-					
-					<div id="parish-contact">
-						<h3>1375 S. Camino Seco<br/>Tucson, AZ 85710<br /><a href="tel:1-520-885-5908" class="tel">(520) 885-5908</a></h3>
-					</div>
+		<header>
+			<div class="page" id="parish-info">
+				<div id="parish-name">
+					<h1>
+						<a href="#">St. Francis de Sales Parish</a>
+					</h1>
+					<h2>A Catholic Church in the Diocese of Tucson</h2>
 				</div>
 				
-				<div id="nav">
-					<ul class="page">
-						<li>
-							<a href="#">Home</a>
-						</li>
-						<li>
-							<a href="#">Sacraments</a>
-						</li>
-						<li>
-							<a href="#">Ministries</a>
-						</li>
-						<li>
-							<a href="#">Resources</a>
-						</li>
-						<li>
-							<a href="#">Giving</a>
-						</li>
-						<li>
-							<a href="#">About</a>
-						</li>
-						<li>
-							<a href="#">Contact</a>
-						</li>
-					</ul>
+				<div id="parish-contact">
+					<h3>1375 S. Camino Seco<br/>Tucson, AZ 85710<br /><a href="tel:1-520-885-5908" class="tel">(520) 885-5908</a></h3>
 				</div>
-			</header>
-			<div id="wrapper">
-				<section>
-					<div>
-						<p>First thing</p>
-					</div>
-					<div>
-						<p>Second thing</p>
-					</div>
-					<div>
-						<p>Some stuff here</p>
-					</div>
-				</section>
 			</div>
-			<div id="nav-mobile">
+			
+			<div id="nav">
 				<ul class="page">
+					<li>
+						<a href="#">Home</a>
+					</li>
 					<li>
 						<a href="#">Sacraments</a>
 					</li>
@@ -97,14 +60,100 @@
 					</li>
 				</ul>
 			</div>
+		</header>
+		<div id="wrapper">
+		  <div class="wrapper-section" id="mass-times-area">
+		      <h2>Mass Times</h2>
+		  </div>
+		  
+		  <div class="wrapper-section" id="content-area">
+  			<section>
+  				<div>
+  					<p>First thing</p>
+  				</div>
+  				<div>
+  					<p>Second thing</p>
+  				</div>
+  				<div>
+  					<p>Some stuff here</p>
+  				</div>
+  			</section>
+  			<section>
+  				<div>
+  					<p>First thing</p>
+  				</div>
+  				<div>
+  					<p>Second thing</p>
+  				</div>
+  				<div>
+  					<p>Some stuff here</p>
+  				</div>
+  			</section>
+  			<section>
+  				<div>
+  					<p>First thing</p>
+  				</div>
+  				<div>
+  					<p>Second thing</p>
+  				</div>
+  				<div>
+  					<p>Some stuff here</p>
+  				</div>
+  			</section>
+  			<section>
+  				<div>
+  					<p>First thing</p>
+  				</div>
+  				<div>
+  					<p>Second thing</p>
+  				</div>
+  				<div>
+  					<p>Some stuff here</p>
+  				</div>
+  			</section>
+  			<section>
+  				<div>
+  					<p>First thing</p>
+  				</div>
+  				<div>
+  					<p>Second thing</p>
+  				</div>
+  				<div>
+  					<p>Some stuff here</p>
+  				</div>
+  			</section>
+        <img src="http://2.bp.blogspot.com/_5WUZDXTJTFw/TH09q1EL8HI/AAAAAAAAB40/VK_m16Uf39g/s1600/Latin+Mass+Easter+2010+029.jpg"/>
+		  </div>
+		  <footer>
+    		<div class="page">
+    			<p>&copy; 2013 St. Francis de Sales Parish</p>
+    		</div>
+   		</footer>
 		</div>
-		<footer>
-			<div class="page">
-				<p>&copy; 2013 St. Francis de Sales Parish</p>
-			</div>
-		</footer>
+		<div id="nav-mobile">
+			<ul class="page">
+				<li>
+					<a href="#">Sacraments</a>
+				</li>
+				<li>
+					<a href="#">Ministries</a>
+				</li>
+				<li>
+					<a href="#">Resources</a>
+				</li>
+				<li>
+					<a href="#">Giving</a>
+				</li>
+				<li>
+					<a href="#">About</a>
+				</li>
+				<li>
+					<a href="#">Contact</a>
+				</li>
+			</ul>
+		</div>
 		<script>
-			$("#background-wrap").backstretch("http://3.bp.blogspot.com/-3nUTHg6k7-4/UEHjMXyCKZI/AAAAAAAALIw/qxZDRHnFf5M/s1600/IMG_1395.jpg");
+			$('body').backstretch("images/background.jpg");
 		</script>
 	</body>
 </html>
