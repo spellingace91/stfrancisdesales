@@ -15,25 +15,105 @@ body {
 }
 
 #wrapper {
-	margin: 25px auto;
+	margin: 0 auto 25px;
 }
 
 .wrapper-section {
   margin: 25px auto 0;
-  background: #fff0;
-  background: rgba(255,255,255,0.95)/* rgba(255,255,240, 0.95) */;
+  background: rgba(255,255,255,0.95) /* rgba(255,255,240, 0.95) */;
 	color: #222;
 	box-shadow: rgba(0,0,0,0.4) 0 0 24px;
 	padding: 35px;
 }
 
-#mass-times-area {
-  background: rgba(39,5,5, .85) /* #582f1c */ /* #2C3E50 */ /* #519548 */;
-  color: #fff;
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+.wrapper-box {
+	
 }
 
-#content-area img {
+#times {
+	background: none;
+	min-width: 100%;
+}
+
+.schedule {
+	background: rgba(39,5,5, .85) /* #582f1c */ /* #2C3E50 */ /* #519548 */;
+  color: #fff;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  /* float: left; */
+  padding: 0;
+  display: inline-block;
+}
+
+.schedule:after {
+	content: '';
+	width: 100%;
+	display: inline-block;
+}
+
+.schedule:last-child {
+	margin-right: 0;
+}
+
+.schedule h2 {
+	text-align: center;
+	padding: 25px;
+	padding-bottom: 15px;
+}
+
+.times-content {
+	background: rgba(255,255,240,0.95) url('../images/brushed.png') repeat;
+	padding: 0 25px 25px;
+	overflow: hidden;
+	height: 228px;
+}
+
+.schedule h2, .times-content {
+	border-bottom: 4px solid #B0916E;
+}
+
+.day {
+	float: left;
+	margin-top: 15px;
+}
+
+.day-of-the-week {
+	font-family: 'Lusitana';
+	text-transform: uppercase;
+	font-size: 100%;
+	/* letter-spacing: 1px; */
+	color: #B0916E;
+	font-weight: 600;
+}
+
+#saturday {
+	float: left;
+	padding-right: 10px;
+  /* box-shadow: inset 0 1px 0 white, 0 1px 0 white; */
+}
+
+#sunday {
+	float: right;
+	padding-left: 15px;
+	border-left: 1px solid #d5d5d5 /* #dbdbdb */;
+	/* border-left: 1px solid #592422; */
+}
+
+.times {
+	margin-left: 10px;
+	color: #2B4D68;
+}
+
+.times span {
+	color: #888;
+	font-size: 80%;
+	letter-spacing: 0.05em;
+}
+
+#content {
+	background: #fff0;
+}
+
+#content img {
   display: block;
   max-width: 100%;
 }
@@ -194,12 +274,8 @@ footer p {
 		margin: 0 auto 26px;
 	}
 	
-	.wrapper-section {
+	.wrapper-box {
 		border-radius: 4px;	
-	}
-	
-	.wrapper-section:last-of-type {
-		border-radius: 4px 4px 0 0;
 	}
 	
 	header {
@@ -323,6 +399,14 @@ padding-top: 5em;
 		margin-right: 0;
 	}
 	
+	 {
+		font-family
+	}
+	
+	#content {
+		border-radius: 4px 4px 0 0;
+	}
+	
 	#nav-mobile {
 		display: none;
 	}
@@ -350,8 +434,10 @@ padding-top: 5em;
 	}
 	
 	#wrapper h2 {
-  	font-size: 150%;
-  	font-weight: 300;
+  	font-family: 'Lusitana', Georgia, 'Times New Roman', serif;
+		font-size: 150%;
+		font-weight: 300;
+		letter-spacing: 4px;
 	}
 	
 	#wrapper section {
@@ -378,6 +464,19 @@ padding-top: 5em;
 	
 	#wrapper section div:last-child {
 		margin-right: 0;
+	}
+	
+	.schedule {
+		margin-right: 25px;
+		height: 364px;
+	}
+	
+	.two {
+		width: 433px;
+	}
+	
+	.three {
+		width: 279px;
 	}
 	
 	#parish-info {

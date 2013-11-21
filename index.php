@@ -64,11 +64,11 @@
 			</div>
 		</header>
 		<div id="wrapper">
-		  <div class="wrapper-section" id="mass-times-area">
-		      <h2><?php adoration_schedule(); ?></h2>
+		  <div id="times">
+		      <?php adoration_schedule(); ?>
 		  </div>
 		  
-		  <div class="wrapper-section" id="content-area">
+		  <div class="wrapper-section" id="content">
   			<section>
   				<div>
   					<p>First thing</p>
