@@ -49,7 +49,7 @@
 						<a href="#">Ministries</a>
 					</li>
 					<li>
-						<a href="#">Resources</a>
+						<a href="#">Bulletin</a>
 					</li>
 					<li>
 						<a href="#">Giving</a>
