@@ -4,7 +4,7 @@
 		$variable = false;
 		if (!$variable && (10 <= date(n) || date(n) <= 4))
 		{
-			echo '<div class="schedule wrapper-section wrapper-box two" id="mass">
+			echo '<div class="five columns alpha omega schedule wrapper-section wrapper-box" id="mass">
 	<h2>Holy Sacrifice of the Mass</h2>
 	<div class="times-content">
 		<div class="day" id="saturday">
@@ -30,7 +30,7 @@
 	</div>
 </div>
 
-<div class="schedule wrapper-section wrapper-box two" id="reconciliation">
+<div class="five columns alpha omega schedule wrapper-section wrapper-box" id="reconciliation">
 	<h2>Reconciliation</h2>
 	<div class="times-content">
 		<div class="day">

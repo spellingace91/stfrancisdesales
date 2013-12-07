@@ -14,12 +14,11 @@ body {
 	line-height: 26px;
 }
 
-#wrapper {
-	margin: 0 auto 25px;
+#content-wrap {
 }
 
 .wrapper-section {
-  margin: 25px auto 0;
+	margin-bottom: 25px;
   background: rgba(255,255,255,0.95) /* rgba(255,255,240, 0.95) */;
 	color: #222;
 	box-shadow: rgba(0,0,0,0.4) 0 0 24px;
@@ -30,9 +29,11 @@ body {
 	
 }
 
+/*
 #times {
 	margin-top: 25px;
 }
+*/
 
 .schedule {
 	background: rgba(39,5,5, .85) /* #582f1c */ /* #2C3E50 */ /* #519548 */;
@@ -40,7 +41,6 @@ body {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   /* float: left; */
   padding: 0;
-  display: inline-block;
 }
 
 .schedule:after {
@@ -176,9 +176,7 @@ header {
 }
 
 #parish-info {
-	overflow: hidden;
-	width: auto;
-	padding: 0 25px;
+	margin-bottom: 25px;
 }
 
 header h1 {
@@ -237,12 +235,20 @@ header h3:last-child {
 	margin: 0 auto 26px;
 }
 
-#nav .page li {
+#nav .container li {
 	float: left;
 }
 
 li > a {
 	
+}
+
+#content {
+	background: rgba(255,255,255,0.95);
+}
+
+section {
+	padding: 25px;
 }
 
 section p {
@@ -374,7 +380,7 @@ footer p {
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b4e69', endColorstr='#244157',GradientType=0 ); /* IE6-9 */
 	}
 	
-	#nav .page:after {
+	#nav .container:after {
 		content: ".";
 		display: block;
 		height: 0;
@@ -383,7 +389,7 @@ footer p {
 		font-size: 0;
 	}
 	
-	#nav .page li a {
+	#nav .container li a {
 		font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 		font-size: 16px;
 		display: block;
@@ -392,7 +398,7 @@ footer p {
 		text-align: center;
 		letter-spacing: 1px;
 		color: #FFFFF0;
-		width: 104px;
+		width: 133px;
 		border-left: 1px solid #233f55;
 		-webkit-transition: background .05s ease-out;  
 		-moz-transition: background .05s ease-out;  
@@ -400,7 +406,7 @@ footer p {
 		transition: background .05s ease-out;
 	}
 	
-	#nav .page li:last-child a {
+	#nav .container li:last-child a {
 		border-right: 1px solid #233f55;
 		-webkit-transition: background .05s ease-out;  
 		-moz-transition: background .05s ease-out;  
@@ -408,7 +414,7 @@ footer p {
 		transition: background .05s ease-out;
 	}
 	
-	#nav .page li a:hover {
+	#nav .container li a:hover {
 		background: #424242;
 		background: #8E001C;
 		background: #799AA5;
@@ -454,9 +460,11 @@ padding-top: 5em;
 		display: none;
 	}
 	
-	#parish-info {
+	/*
+#parish-info {
 		max-width: 743px;
 	}
+*/
 	
 	footer{
 		border-radius: 0 0 4px 4px;
@@ -476,7 +484,7 @@ padding-top: 5em;
   	width: 896px;
 	}
 	
-	#wrapper h2 {
+	.schedule h2 {
   	font-family: 'Lusitana', Georgia, 'Times New Roman', serif;
 		font-size: 150%;
 		font-weight: 300;
@@ -489,6 +497,7 @@ padding-top: 5em;
 	
 	header {
 		text-align: right;
+		margin-bottom: 25px;
 	}
 	
 	#nav .page {
@@ -509,23 +518,37 @@ padding-top: 5em;
 		margin-right: 0;
 	}
 	
-	.schedule {
+	/*
+.schedule {
 		margin-right: 20px;
 	}
+*/
 	
-	#mass {
+	/*
+#mass {
 		width: 601px;
 	}
 	
 	#reconciliation {
 		width: 275px;
 	}
+*/
 	
 	.three {
 		width: 279px;
 	}
 	
-	#parish-info {
+	/*
+#parish-info {
 		max-width: 896px;
+	}
+*/
+	
+	.content-width {
+		width: 601px;
+	}
+	
+	.times-width {
+		width: 275px;
 	}
 }
