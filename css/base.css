@@ -289,6 +289,19 @@ section p {
 
 .bottom-section {
 	float: left;
+	opacity: .7;
+	-webkit-transition: opacity .15s ease-out;  
+	-moz-transition: opacity .15s ease-out;  
+	-o-transition: opacity .15s ease-out;  
+	transition: opacity .15s ease-out;
+}
+
+.bottom-section:hover {
+  opacity: 1;
+  -webkit-transition: opacity .15s ease-out;  
+	-moz-transition: opacity .15s ease-out;  
+	-o-transition: opacity .15s ease-out;  
+	transition: opacity .15s ease-out;
 }
 
 #bottom p, footer p {
@@ -389,6 +402,7 @@ footer span {
 	
 	header {
 		text-align: right;
+		margin-bottom: 25px;
 	}
 	
 	#parish-name {
@@ -506,10 +520,6 @@ padding-top: 5em;
 	
 	#wrapper section div:last-child {
 		margin-right: 0;
-	}
-	
-	 {
-		font-family
 	}
 	
 	#content {

@@ -38,7 +38,7 @@
 						</div>
 						
 						<div class="four columns offset-by-one omega" id="parish-contact">
-							<h3>1375 S. Camino Seco Rd.<br/>Tucson, AZ 85710<br /><a href="tel:1-520-885-5908" class="tel">(520) 885-5908</a></h3>
+							<h3>1375 S. Camino Seco<br/>Tucson, AZ 85710<br /><a href="tel:1-520-885-5908" class="tel">(520) 885-5908</a></h3>
 						</div>
 					</div>
 				</div>
