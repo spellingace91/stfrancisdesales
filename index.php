@@ -82,6 +82,56 @@
 	        	<section>
 	        		<h1>Welcome!</h1>
 	        	</section>
+	        	
+	        	<section>
+		        	<div id="calendar">
+		        		<div class="calendar-item">
+		        			<div class="calendar-item-content">
+			        			<div>
+			        				<h2><span>Monday</span></h2>
+					        		<h2>January</h2>
+			        			</div>
+				        		<h3>6</h3>
+		        			</div>
+		        		</div>
+								<div class="calendar-item">
+			        		<div class="calendar-item-content">
+				        		<div>
+				        			<h2><span>Tuesday</span></h2>
+					        		<h2>January</h2>
+				        		</div>
+				        		<h3>7</h3>
+			        		</div>
+		        		</div>
+		        		<div class="calendar-item">
+			        		<div class="calendar-item-content">
+				        		<div>
+				        			<h2><span>Wednesday</span></h2>
+					        		<h2>January</h2>
+				        		</div>
+				        		<h3>8</h3>
+		        		</div>
+		        		</div>
+		        		<div class="calendar-item">
+			        		<div class="calendar-item-content">
+				        		<div>
+				        			<h2><span>Thursday</span></h2>
+					        		<h2>January</h2>
+				        		</div>
+				        		<h3>9</h3>
+			        		</div>
+		        		</div>
+		        		<div class="calendar-item">
+		        			<div class="calendar-item-content">
+				        		<div>
+				        			<h2><span>Friday</span></h2>
+					        		<h2>January</h2>
+				        		</div>
+				        		<h3>10</h3>
+		        			</div>
+		        		</div>
+		        	</div>
+	        	<section>
 					</div>
 					
 			  	<div class="five columns omega" id="times">
@@ -178,7 +228,7 @@
 	  <footer>
 	  	<div class="container">
 	  		<div class="sixteen columns">
-	  			<p class="thirteen columns alpha">&copy; 2013 St. Francis de Sales Parish  <span>•</span>  1375 S. Camino Seco Rd., Tucson, AZ 85710  <span>•</span>  P: 520-885-5908 <span>•</span> F: 520-885-3109</p>
+	  			<p class="thirteen columns alpha">&copy; 2013 St. Francis de Sales Parish  <span>•</span>  1375 S. Camino Seco, Tucson, AZ 85710  <span>•</span>  P: 520-885-5908 <span>•</span> F: 520-885-3109</p>
 	  		</div>
   		</div>
  		</footer>
