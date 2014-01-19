@@ -324,6 +324,22 @@ section p {
 	border-right: 2px solid #878787;
 }
 
+.calendar-item ul {
+	list-style: disc;
+	float: left;
+	margin-left: 25px;
+}
+
+.calendar-item ul li span {
+	position: relative;
+	left: -0.3em;
+}
+
+.calendar-item ul li a {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
 #nav-mobile {
 	background: #2B4E69;
 	overflow: hidden;

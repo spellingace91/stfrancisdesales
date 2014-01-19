@@ -93,6 +93,13 @@
 			        			</div>
 				        		<h3>6</h3>
 		        			</div>
+		        			<ul>
+			        			<li><span><a href="#">10:30am - Craft Group</a></span></li>
+			        			<li><span><a href="#">11:30am - Something else</a></span></li>
+			        			<li><span><a href="#">10:30am - Craft Group</a></span></li>
+			        			<li><span><a href="#">10:30am - Craft Group</a></span></li>
+			        			<li><span><a href="#">10:30am - Craft Group</a></span></li>
+			        		</ul>
 		        		</div>
 								<div class="calendar-item">
 			        		<div class="calendar-item-content">
