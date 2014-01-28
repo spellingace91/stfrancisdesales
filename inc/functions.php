@@ -43,7 +43,7 @@
 			<p class="day-of-the-week">Saturdays</p>
 			<div class="times">
 				<p>3:30 pm</p>
-				<p>by appointment</p>
+				<p>or by appointment</p>
 			</div>
 		</div>
 	</div>
