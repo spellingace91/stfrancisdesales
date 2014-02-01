@@ -94,11 +94,9 @@
 				        		<h3>6</h3>
 		        			</div>
 		        			<ul>
-			        			<li><span><a href="#">10:30am - Craft Group</a></span></li>
-			        			<li><span><a href="#">11:30am - Something else</a></span></li>
-			        			<li><span><a href="#">10:30am - Craft Group</a></span></li>
-			        			<li><span><a href="#">10:30am - Craft Group</a></span></li>
-			        			<li><span><a href="#">10:30am - Craft Group</a></span></li>
+			        			<li><span><a href="#">9:30am - Craft Group</a></span></li>
+			        			<li><span><a href="#">4:00pm - Kindergarten & Elem. Religious Ed</a></span></li>
+			        			<li><span><a href="#">7:00pm - Sr./Jr. High School Religious Ed</a></span></li>
 			        		</ul>
 		        		</div>
 								<div class="calendar-item">
@@ -109,6 +107,11 @@
 				        		</div>
 				        		<h3>7</h3>
 			        		</div>
+				        		<ul>
+			        			<li><span><a href="#">9:00am - Centering Group</a></span></li>
+			        			<li><span><a href="#">10:00am - Bible Discussion Group</a></span></li>
+			        			<li><span><a href="#">7:00pm - OCIA</a></span></li>
+			        		</ul>
 		        		</div>
 		        		<div class="calendar-item">
 			        		<div class="calendar-item-content">
@@ -117,25 +120,10 @@
 					        		<h2>January</h2>
 				        		</div>
 				        		<h3>8</h3>
-		        		</div>
-		        		</div>
-		        		<div class="calendar-item">
-			        		<div class="calendar-item-content">
-				        		<div>
-				        			<h2><span>Thursday</span></h2>
-					        		<h2>January</h2>
-				        		</div>
-				        		<h3>9</h3>
 			        		</div>
-		        		</div>
-		        		<div class="calendar-item">
-		        			<div class="calendar-item-content">
-				        		<div>
-				        			<h2><span>Friday</span></h2>
-					        		<h2>January</h2>
-				        		</div>
-				        		<h3>10</h3>
-		        			</div>
+				        		<ul>
+			        			<li><span><a href="#">10:00am - New Testament Class</a></span></li>
+			        		</ul>
 		        		</div>
 		        	</div>
 	        	<section>
