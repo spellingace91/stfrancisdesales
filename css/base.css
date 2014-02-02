@@ -17,11 +17,12 @@ body {
 }
 
 #content-wrap {
+	padding-bottom: 25px;
 }
 
 .wrapper-section {
 	margin-bottom: 25px;
-  background: rgba(255,255,255,0.95) /* rgba(255,255,240, 0.95) */;
+	background: rgba(255,255,255,0.95) /* rgba(255,255,240, 0.95) */;
 	color: #222;
 	box-shadow: rgba(0,0,0,0.4) 0 0 24px;
 	padding: 35px;
