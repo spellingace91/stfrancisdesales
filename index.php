@@ -3,32 +3,12 @@
 	<head>
 		<title>St. Francis de Sales Parish - Catholic Church, Tucson, AZ</title>
 	
-		<meta charset="utf-8" />
-		<meta name="description" content="ADD CONTENT HERE"/>
-		<meta name="author" content=""/>
-		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1, width=device-width"/>
-		
-		<link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
-		<link rel="shortcut icon" href="images/favicon.ico"/>
-		<link rel="icon" type="image/ico" href="images/favicon.ico"/>
-		
-		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/base.css" />
-		<link rel="stylesheet" href="css/skeleton.css" />
-		<link rel="stylesheet" href="css/layout.css" />
-		
-		<?php include("inc/functions.php"); ?>
-		
-		<link href='http://fonts.googleapis.com/css?family=Lusitana' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500' rel='stylesheet' type='text/css'>
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script src="js/backstretch.js"></script>
+		<?php $inc = $_SERVER['DOCUMENT_ROOT'].'/stfrancisdesales/inc/'; include $inc.'head.php'; ?>
 	</head>
 	<body>
 		<div id="background-wrap">
 			
-			<?php include("./inc/header.php"); ?>
+			<?php include $inc.'header.php'; ?>
 			
 			<!-- <div id="wrapper"> -->
 			<div class="container" id="content-wrap">
@@ -95,7 +75,7 @@
 			</div>
 		</div>
 		
-		<?php include("./inc/footer.php"); ?>
+		<?php include $inc.'footer.php'; ?>
 		
 		<div id="nav-mobile">
 			<ul class="page">
@@ -120,7 +100,7 @@
 			</ul>
 		</div>
 		<script>
-			$('#background-wrap').backstretch("images/background.jpg");
+			$('#background-wrap').backstretch("/stfrancisdesales/images/background.jpg");
 		</script>
 	</body>
 </html>
