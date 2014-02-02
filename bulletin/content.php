@@ -1,4 +1,3 @@
-							<h1>THIS IS WHERE THE CONTENT GOES!!!!!1!!</h1>
 							<?php
 								date_default_timezone_set('America/Phoenix');
 								$i = 1;

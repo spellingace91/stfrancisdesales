@@ -13,6 +13,7 @@
 				  
 					<div class="sixteen columns alpha omega" id="content">
 						<section>
+							<h1><?php echo $title; ?></h1>
 							<?php include './content.php'; ?>
 						</section>
 					</div>
