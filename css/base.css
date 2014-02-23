@@ -266,19 +266,36 @@ section p {
 	margin: 0 auto;
 }
 
+.calendar-header {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	background: #222;
+	padding: 10px 0;
+}
+
+.calendar-header h2 {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	letter-spacing: .75em;
+	color: #f6f0e0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
 .calendar-item {
 	background-color: #FAFAFA;
 	border-top: 1px solid #DDDDDD;
 	border-right: 1px solid #DDDDDD;
 	border-left: 1px solid #DDDDDD;
-	padding: 10px;
+	padding: 15px 10px;
 	overflow: hidden;
 }
 
+/*
 .calendar-item:first-child {
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
 }
+*/
 
 .calendar-item:last-child {
 	border-bottom-left-radius: 4px;
@@ -287,8 +304,8 @@ section p {
 }
 
 .calendar-item-content {
-	width: 130px;
-	overflow: hidden;
+	width: 75px;
+	border-right: 2px solid #878787;
 }
 
 .calendar-item-content div {
@@ -297,6 +314,9 @@ section p {
 
 .calendar-item div, .calendar-item h3 {
 	float: left;
+	position: relative;
+	left: 9%;
+	clear: left;
 }
 
 .calendar-item h2 {
@@ -304,8 +324,11 @@ section p {
 	color: #878787;
 	font-size: 14px;
 	line-height: 14px;
-	clear: left;
-	margin-bottom: 3px;
+	/* clear: left; */
+	margin-bottom: 10px;
+	position: relative;
+	float: left;
+	left: -50%;
 }
 
 .calendar-item h2 span {
@@ -319,17 +342,17 @@ section p {
 	font-size: 46px;
 	font-weight: bold;
 	margin-top: -6px /* -7px */;
-	float: right;
+	clear: left;
 	padding-right: 10px;
 	margin-right: 5px;
+	left: -40%;
 }
 
 .calendar-item ul {
 	list-style: disc;
 	float: left;
 	padding-left:	45px;
-	margin-left: -5px;
-	border-left: 2px solid #878787;
+	margin-left: 44px;
 }
 
 .calendar-item ul li {
@@ -667,7 +690,7 @@ padding-top: 5em;
 	
 	header {
 		text-align: right;
-		margin-bottom: 25px;
+		margin-bottom: 50px;
 	}
 	
 	#nav .page {

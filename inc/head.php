@@ -1,4 +1,4 @@
-		<title><?php echo $title.' | St. Francis de Sale Parish - Catholic Church, Tucson, AZ'; ?></title>
+		<title><?php echo $title.' | St. Francis de Sales Parish - Catholic Church, Tucson, AZ'; ?></title>
 		
 		<meta charset="utf-8" />
 		<meta name="description" content="ADD CONTENT HERE"/>

@@ -21,13 +21,17 @@
 	        	
 	        	<section>
 		        	<div id="calendar">
+		        		<div class="calendar-header">
+		        			<h2>February</h2>
+		        		</div>
 		        		<div class="calendar-item">
 		        			<div class="calendar-item-content">
 			        			<div>
-			        				<h2><span>Monday</span></h2>
-					        		<h2>January</h2>
+			        				<h2><span>MON</span></h2>
 			        			</div>
-				        		<h3>6</h3>
+			        			<div>
+				        			<h3>9</h3>
+			        			</div>
 		        			</div>
 		        			<ul>
 			        			<li><span><a href="#">9:30am - Craft Group</a></span></li>
@@ -38,10 +42,11 @@
 								<div class="calendar-item">
 			        		<div class="calendar-item-content">
 				        		<div>
-				        			<h2><span>Tuesday</span></h2>
-					        		<h2>January</h2>
+				        			<h2><span>TUE</span></h2>
 				        		</div>
-				        		<h3>7</h3>
+				        		<div>
+				        			<h3>10</h3>
+				        		</div>
 			        		</div>
 				        		<ul>
 			        			<li><span><a href="#">9:00am - Centering Group</a></span></li>
@@ -52,10 +57,11 @@
 		        		<div class="calendar-item">
 			        		<div class="calendar-item-content">
 				        		<div>
-				        			<h2><span>Wednesday</span></h2>
-					        		<h2>January</h2>
+				        			<h2><span>WED</span></h2>
 				        		</div>
-				        		<h3>8</h3>
+				        		<div>
+				        			<h3>11</h3>
+				        		</div>
 			        		</div>
 				        		<ul>
 			        			<li><span><a href="#">10:00am - New Testament Class</a></span></li>
@@ -98,7 +104,7 @@
 			</ul>
 		</div>
 		<script>
-			$('#background-wrap').backstretch("/stfrancisdesales/images/background.jpg");
+			$('#background-wrap').backstretch("/stfrancisdesales/images/IMG_9273.jpg");
 		</script>
 	</body>
 </html>
