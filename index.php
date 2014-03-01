@@ -22,15 +22,15 @@
 	        	<section>
 		        	<div id="calendar">
 		        		<div class="calendar-header">
-		        			<h2>February</h2>
+		        			<h2>February - March</h2>
 		        		</div>
 		        		<div class="calendar-item">
 		        			<div class="calendar-item-content">
 			        			<div>
-			        				<h2><span>MON</span></h2>
+			        				<h2><span>THU</span></h2>
 			        			</div>
 			        			<div>
-				        			<h3>9</h3>
+				        			<h3>27</h3>
 			        			</div>
 		        			</div>
 		        			<ul>
@@ -42,10 +42,10 @@
 								<div class="calendar-item">
 			        		<div class="calendar-item-content">
 				        		<div>
-				        			<h2><span>TUE</span></h2>
+				        			<h2><span>FRI</span></h2>
 				        		</div>
 				        		<div>
-				        			<h3>10</h3>
+				        			<h3>28</h3>
 				        		</div>
 			        		</div>
 				        		<ul>
@@ -57,10 +57,10 @@
 		        		<div class="calendar-item">
 			        		<div class="calendar-item-content">
 				        		<div>
-				        			<h2><span>WED</span></h2>
+				        			<h2><span>SAT</span></h2>
 				        		</div>
 				        		<div>
-				        			<h3>11</h3>
+				        			<h3>1</h3>
 				        		</div>
 			        		</div>
 				        		<ul>
@@ -104,7 +104,9 @@
 			</ul>
 		</div>
 		<script>
-			$('#background-wrap').backstretch("/stfrancisdesales/images/IMG_9273.jpg");
+			var pictures = ["IMG_9299", "IMG_9286", "IMG_9273", "IMG_9389", "IMG_9361", "IMG_9350", "IMG_9334", "IMG_9376"];
+			var background = pictures[Math.floor(Math.random() * pictures.length)]
+			$('#background-wrap').backstretch("/stfrancisdesales/images/" + background + ".jpg");
 		</script>
 	</body>
 </html>
