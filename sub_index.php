@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -22,8 +26,8 @@
 			
 		<?php include $inc.'footer.php'; ?>
 
-		<script>
-			$('#background-wrap').backstretch("/stfrancisdesales/images/background.jpg");
+		<script>			
+			$('#background-wrap').backstretch("/stfrancisdesales/images/" + "<?php echo $_SESSION['backgroundImage']; ?>" + ".jpg");
 		</script>
 	</body>
 </html>

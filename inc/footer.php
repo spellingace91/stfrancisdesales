@@ -5,25 +5,25 @@
 						<h3>Navigation</h3>
 						<ul>
 							<li>
-								<a href="#">Home</a>
+								<a href="/">Home</a>
 							</li>
 							<li>
-								<a href="#">Sacraments</a>
+								<a href="/sacraments/">Sacraments</a>
 								</li>
 							<li>
-								<a href="#">Ministries</a>
+								<a href="/ministries/">Ministries</a>
 							</li>
 							<li>
-								<a href="#">Bulletin</a>
+								<a href="/bulletins/">Bulletin</a>
 							</li>
 							<li>
-								<a href="#">Giving</a>
+								<a href="/giving/">Giving</a>
 							</li>
 							<li>
-								<a href="#">About</a>
+								<a href="/about/">About</a>
 							</li>
 							<li>
-								<a href="#">Contact</a>
+								<a href="/contact/">Contact</a>
 							</li>
 						</ul>
 					</div>
@@ -64,13 +64,13 @@
 								<a href="#">Youth Group</a>
 							</li>
 							<li>
-								<a href="#">Diocese of Tucson</a>
+								<a href="http://www.diocesetucson.org/" target="_blank">Diocese of Tucson</a>
 							</li>
 							<li>
-								<a href="#">Vatican.va</a>
+								<a href="http://www.vatican.va" target="_blank">Vatican.va</a>
 							</li>
 							<li>
-								<a href="#">The New Vision</a>
+								<a href="http://www.newvisiononline.org/" target="_blank">The New Vision</a>
 							</li>
 						</ul>
 					</div>
@@ -81,7 +81,18 @@
 <footer>
 	<div class="container">
 		<div class="sixteen columns">
-			<p class="thirteen columns alpha">&copy; 2013 St. Francis de Sales Parish  <span>•</span>  1375 S. Camino Seco, Tucson, AZ 85710  <span>•</span>  P: <a href="tel:1-520-885-5908" class="tel">520-885-5908</a> <span>•</span> F: 520-885-3109</p>
-			</div>
+			<p class="thirteen columns alpha">
+				&copy; 
+				<?php 
+					echo date('Y');
+				?> 
+				St. Francis de Sales Parish  
+				<span>•</span>  
+				1375 S. Camino Seco, Tucson, AZ 85710  
+				<span>•</span>  
+				P: <a href="tel:1-520-885-5908" class="tel">520-885-5908</a> 
+				<span>•</span> F: 520-885-3109
+			</p>
 		</div>
+	</div>
 </footer>

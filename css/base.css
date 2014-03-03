@@ -275,6 +275,7 @@ section p {
 
 .calendar-header h2 {
 	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-weight: bold;
 	letter-spacing: .75em;
 	color: #f6f0e0;
 	text-align: center;
@@ -359,15 +360,16 @@ section p {
 	margin-bottom: 3px;
 }
 
-.calendar-item ul li span {
-	position: relative;
-	left: -0.3em;
+.calendar-item ul li em {
+	font-weight: bold;
 }
 
 .calendar-item ul li a {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	color: #2B4E68 /* #9A2828 */;
+	position: relative;
+	left: -0.3em;
 }
 
 .calendar-item ul li a:hover {

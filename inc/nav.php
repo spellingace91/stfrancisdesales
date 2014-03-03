@@ -5,22 +5,22 @@
 					<a href="#">Home</a>
 				</li>
 				<li>
-					<a href="#">Sacraments</a>
+					<a href="/sacraments/">Sacraments</a>
 				</li>
 				<li>
-					<a href="#">Ministries</a>
+					<a href="/ministries/">Ministries</a>
 				</li>
 				<li>
-					<a href="#">Bulletin</a>
+					<a href="/bulletin/">Bulletin</a>
 				</li>
 				<li>
-					<a href="#">Giving</a>
+					<a href="/giving/">Giving</a>
 				</li>
 				<li>
-					<a href="#">About</a>
+					<a href="/about/">About</a>
 				</li>
 				<li>
-					<a href="#">Contact</a>
+					<a href="/contact/">Contact</a>
 				</li>
 			</ul>
 		</div>

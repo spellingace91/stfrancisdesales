@@ -1,3 +1,19 @@
+<?php
+	error_reporting(E_ERROR | E_WARNING | E_PARSE);
+	
+	session_start();
+	
+	if (isset($_SESSION['backgroundImage'])) {
+		session_destroy();
+	}
+	
+	if (!isset($_SESSION['backgroundImage'])) {
+		$images = array("IMG_9299", "IMG_9286", "IMG_9273", "IMG_9389", "IMG_9361", "IMG_9350", "IMG_9334", "IMG_9376");
+		$backgroundImage = $images[floor(mt_rand() / mt_getrandmax() * count($images))];
+		$_SESSION['backgroundImage'] = $backgroundImage;
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -34,9 +50,9 @@
 			        			</div>
 		        			</div>
 		        			<ul>
-			        			<li><span><a href="#">9:30am - Craft Group</a></span></li>
-			        			<li><span><a href="#">4:00pm - Kindergarten & Elem. Religious Ed</a></span></li>
-			        			<li><span><a href="#">7:00pm - Sr./Jr. High School Religious Ed</a></span></li>
+			        			<li><a href="#"><em>9:30 am</em> - Craft Group</a></li>
+			        			<li><a href="#"><em>4:00 pm</em> - Kindergarten & Elem. Religious Ed</a></li>
+			        			<li><a href="#"><em>7:00 pm</em> - Sr./Jr. High School Religious Ed</a></li>
 			        		</ul>
 		        		</div>
 								<div class="calendar-item">
@@ -49,9 +65,10 @@
 				        		</div>
 			        		</div>
 				        		<ul>
-			        			<li><span><a href="#">9:00am - Centering Group</a></span></li>
-			        			<li><span><a href="#">10:00am - Bible Discussion Group</a></span></li>
-			        			<li><span><a href="#">7:00pm - OCIA</a></span></li>
+			        			<li><a href="#"><em>9:00 am</em> - Centering Group</a></li>
+			        			<li><a href="#"><em>10:00 am</em> - Bible Discussion Group</a></li>
+			        			<li><a href="#"><em>7:00 pm</em> - OCIA</a></li>
+			        			
 			        		</ul>
 		        		</div>
 		        		<div class="calendar-item">
@@ -64,7 +81,7 @@
 				        		</div>
 			        		</div>
 				        		<ul>
-			        			<li><span><a href="#">10:00am - New Testament Class</a></span></li>
+			        			<li><a href="#"><em>10:00 am</em> - New Testament Class</span></li>
 			        		</ul>
 		        		</div>
 		        	</div>
@@ -84,29 +101,27 @@
 		<div id="nav-mobile">
 			<ul class="page">
 				<li>
-					<a href="#">Sacraments</a>
+					<a href="/sacraments/">Sacraments</a>
 				</li>
 				<li>
-					<a href="#">Ministries</a>
+					<a href="/ministries/">Ministries</a>
 				</li>
 				<li>
-					<a href="#">Resources</a>
+					<a href="/resources/">Resources</a>
 				</li>
 				<li>
-					<a href="#">Giving</a>
+					<a href="/giving/">Giving</a>
 				</li>
 				<li>
-					<a href="#">About</a>
+					<a href="/about/">About</a>
 				</li>
 				<li>
-					<a href="#">Contact</a>
+					<a href="/contact/">Contact</a>
 				</li>
 			</ul>
 		</div>
-		<script>
-			var pictures = ["IMG_9299", "IMG_9286", "IMG_9273", "IMG_9389", "IMG_9361", "IMG_9350", "IMG_9334", "IMG_9376"];
-			var background = pictures[Math.floor(Math.random() * pictures.length)]
-			$('#background-wrap').backstretch("/stfrancisdesales/images/" + background + ".jpg");
+		<script>			
+			$('#background-wrap').backstretch("/stfrancisdesales/images/" + "<?php echo $_SESSION['backgroundImage']; ?>" + ".jpg", {speed: 1000});
 		</script>
 	</body>
 </html>
