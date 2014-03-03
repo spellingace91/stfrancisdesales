@@ -81,7 +81,7 @@
 				        		</div>
 			        		</div>
 				        		<ul>
-			        			<li><a href="#"><em>10:00 am</em> - New Testament Class</span></li>
+			        			<li><a href="#"><em>10:00 am</em> - New Testament Class</a></li>
 			        		</ul>
 		        		</div>
 		        	</div>
