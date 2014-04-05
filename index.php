@@ -89,7 +89,50 @@
 					</div>
 					
 			  	<div class="five columns omega" id="times">
-				      <?php adoration_schedule(); ?>
+				      <div class="five columns alpha omega schedule wrapper-section wrapper-box" id="mass">
+								<h2>Masses</h2>
+								<div class="times-content">
+									<div class="day" id="saturday">
+										<p class="day-of-the-week">Saturday</p>
+										<div class="times"
+											<p>8:00 am</p>
+											<p>5:00 pm <span>(Anticipated)</span></p>
+										</div>
+									</div>
+								
+									<div class="day" id="sunday">
+										<p class="day-of-the-week">Sunday</p>
+										<div class="times">
+											<p>7:30 am</p>
+											<p>9:30 am</p>
+											<p>11:30 am</p>
+											<p>5:00 pm</p>
+										</div>
+									</div>
+									
+									<div class="day" id="mon-fri">
+										<p class="day-of-the-week">Monday - Friday</p>
+										<div class="times"
+											<p>6:30 am <span>(Communion Service)</span></p>
+											<p>8:00 am</p>
+										</div>
+									</div>
+								
+								</div>
+							</div>
+							
+							<div class="five columns alpha omega schedule wrapper-section wrapper-box" id="reconciliation">
+								<h2>Reconciliation</h2>
+								<div class="times-content">
+									<div class="day">
+										<p class="day-of-the-week">Saturdays</p>
+										<div class="times">
+											<p>3:30 pm</p>
+											<p>or by appointment</p>
+										</div>
+									</div>
+								</div>
+							</div>
 				  </div>
 			  
 				</div>
@@ -120,8 +163,27 @@
 				</li>
 			</ul>
 		</div>
-		<script>			
-			$('#background-wrap').backstretch("/stfrancisdesales/images/" + "<?php echo $_SESSION['backgroundImage']; ?>" + ".jpg", {speed: 1000});
+		<script>
+			var bs = false;
+			var image = "/stfrancisdesales/images/" + "<?php echo $_SESSION['backgroundImage']; ?>" + ".jpg";
+			toggleBackstretch( 480, image );
+			
+			$(window).on('resize',function(){
+			    toggleBackstretch( 480, image );
+			});
+			
+			function toggleBackstretch( breakpoint, src ){
+			
+			    if( $(window).width() > breakpoint && !bs ){
+			         $('#background-wrap').backstretch(src);
+			         bs = !bs;
+			    }
+			
+			    else if(bs){
+			         $('#background-wrap').backstretch('destroy');
+			         bs = !bs;
+			    }
+			}
 		</script>
 	</body>
 </html>
