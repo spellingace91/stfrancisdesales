@@ -68,7 +68,9 @@
 			        			<li><a href="#"><em>9:00 am</em> - Centering Group</a></li>
 			        			<li><a href="#"><em>10:00 am</em> - Bible Discussion Group</a></li>
 			        			<li><a href="#"><em>7:00 pm</em> - OCIA</a></li>
-			        			
+			        			<li><a href="#"><em>7:00 pm</em> - OCIA</a></li>
+			        			<li><a href="#"><em>7:00 pm</em> - OCIA</a></li>
+			        			<li><a href="#"><em>7:00 pm</em> - OCIA</a></li>
 			        		</ul>
 		        		</div>
 		        		<div class="calendar-item">

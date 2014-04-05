@@ -358,6 +358,7 @@ section p {
 	float: left;
 	padding-left:	45px;
 	margin-left: 44px;
+	border-left: 2px solid #878787;
 }
 
 .calendar-item ul li {
