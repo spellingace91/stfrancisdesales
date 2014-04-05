@@ -1,161 +1,189 @@
+<?php
+	error_reporting(E_ERROR | E_WARNING | E_PARSE);
+	
+	session_start();
+	
+	if (isset($_SESSION['backgroundImage'])) {
+		session_destroy();
+	}
+	
+	if (!isset($_SESSION['backgroundImage'])) {
+		$images = array("IMG_9299", "IMG_9286", "IMG_9273", "IMG_9389", "IMG_9361", "IMG_9350", "IMG_9334", "IMG_9376");
+		$backgroundImage = $images[floor(mt_rand() / mt_getrandmax() * count($images))];
+		$_SESSION['backgroundImage'] = $backgroundImage;
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>St. Francis de Sales Parish - Catholic Church, Tucson, AZ</title>
-	
-		<meta charset="utf-8" />
-		<meta name="description" content="ADD CONTENT HERE"/>
-		<meta name="viewport" content="initial-scale=1.0, width=device-width"/>
-		
-		<link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
-		<link rel="shortcut icon" href="images/favicon.ico"/>
-		<link rel="icon" type="image/ico" href="images/favicon.ico"/>
-		
-		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/base.css" />
-		
-		<?php include("inc/functions.php"); ?>
-		
-		<link href='http://fonts.googleapis.com/css?family=Lusitana' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500' rel='stylesheet' type='text/css'>
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script src="js/backstretch.js"></script>
+		<?php $title = 'Home'; $inc = $_SERVER['DOCUMENT_ROOT'].'/stfrancisdesales/inc/'; include $inc.'head.php'; ?>
 	</head>
 	<body>
-		<header>
-			<div class="page" id="parish-info">
-				<div id="parish-name">
-					<h1>
-						<a href="#">St. Francis de Sales Parish</a>
-					</h1>
-					<h2>A Catholic Church in the Diocese of Tucson</h2>
-				</div>
-				
-				<div id="parish-contact">
-					<h3>1375 S. Camino Seco<br/>Tucson, AZ 85710<br /><a href="tel:1-520-885-5908" class="tel">(520) 885-5908</a></h3>
-				</div>
-			</div>
+		<div id="background-wrap">
 			
-			<div id="nav">
-				<ul class="page">
-					<li>
-						<a href="#">Home</a>
-					</li>
-					<li>
-						<a href="#">Sacraments</a>
-					</li>
-					<li>
-						<a href="#">Ministries</a>
-					</li>
-					<li>
-						<a href="#">Bulletin</a>
-					</li>
-					<li>
-						<a href="#">Giving</a>
-					</li>
-					<li>
-						<a href="#">About</a>
-					</li>
-					<li>
-						<a href="#">Contact</a>
-					</li>
-				</ul>
+			<?php include $inc.'header.php'; ?>
+			
+			<!-- <div id="wrapper"> -->
+			<div class="container" id="content-wrap">
+				<div class="sixteen columns">
+				  
+				  <!-- <div class="wrapper-section content-width" id="content"> -->
+				  <div class="eleven columns alpha" id="content">
+	        	<!-- <img src="http://2.bp.blogspot.com/_5WUZDXTJTFw/TH09q1EL8HI/AAAAAAAAB40/VK_m16Uf39g/s1600/Latin+Mass+Easter+2010+029.jpg"/> -->
+	        	<section>
+	        		<h1>Welcome!</h1>
+	        	</section>
+	        	
+	        	<section>
+		        	<div id="calendar">
+		        		<div class="calendar-header">
+		        			<h2>February - March</h2>
+		        		</div>
+		        		<div class="calendar-item">
+		        			<div class="calendar-item-content">
+			        			<div>
+			        				<h2><span>THU</span></h2>
+			        			</div>
+			        			<div>
+				        			<h3>27</h3>
+			        			</div>
+		        			</div>
+		        			<ul>
+			        			<li><a href="#"><em>9:30 am</em> - Craft Group</a></li>
+			        			<li><a href="#"><em>4:00 pm</em> - Kindergarten & Elem. Religious Ed</a></li>
+			        			<li><a href="#"><em>7:00 pm</em> - Sr./Jr. High School Religious Ed</a></li>
+			        		</ul>
+		        		</div>
+								<div class="calendar-item">
+			        		<div class="calendar-item-content">
+				        		<div>
+				        			<h2><span>FRI</span></h2>
+				        		</div>
+				        		<div>
+				        			<h3>28</h3>
+				        		</div>
+			        		</div>
+				        		<ul>
+			        			<li><a href="#"><em>9:00 am</em> - Centering Group</a></li>
+			        			<li><a href="#"><em>10:00 am</em> - Bible Discussion Group</a></li>
+			        			<li><a href="#"><em>7:00 pm</em> - OCIA</a></li>
+			        			
+			        		</ul>
+		        		</div>
+		        		<div class="calendar-item">
+			        		<div class="calendar-item-content">
+				        		<div>
+				        			<h2><span>SAT</span></h2>
+				        		</div>
+				        		<div>
+				        			<h3>1</h3>
+				        		</div>
+			        		</div>
+				        		<ul>
+			        			<li><a href="#"><em>10:00 am</em> - New Testament Class</a></li>
+			        		</ul>
+		        		</div>
+		        	</div>
+	        	<section>
+					</div>
+					
+			  	<div class="five columns omega" id="times">
+				      <div class="five columns alpha omega schedule wrapper-section wrapper-box" id="mass">
+								<h2>Masses</h2>
+								<div class="times-content">
+									<div class="day" id="saturday">
+										<p class="day-of-the-week">Saturday</p>
+										<div class="times"
+											<p>8:00 am</p>
+											<p>5:00 pm <span>(Anticipated)</span></p>
+										</div>
+									</div>
+								
+									<div class="day" id="sunday">
+										<p class="day-of-the-week">Sunday</p>
+										<div class="times">
+											<p>7:30 am</p>
+											<p>9:30 am</p>
+											<p>11:30 am</p>
+											<p>5:00 pm</p>
+										</div>
+									</div>
+									
+									<div class="day" id="mon-fri">
+										<p class="day-of-the-week">Monday - Friday</p>
+										<div class="times"
+											<p>6:30 am <span>(Communion Service)</span></p>
+											<p>8:00 am</p>
+										</div>
+									</div>
+								
+								</div>
+							</div>
+							
+							<div class="five columns alpha omega schedule wrapper-section wrapper-box" id="reconciliation">
+								<h2>Reconciliation</h2>
+								<div class="times-content">
+									<div class="day">
+										<p class="day-of-the-week">Saturdays</p>
+										<div class="times">
+											<p>3:30 pm</p>
+											<p>or by appointment</p>
+										</div>
+									</div>
+								</div>
+							</div>
+				  </div>
+			  
+				</div>
 			</div>
-		</header>
-		<div id="wrapper">
-		  <div id="times">
-		      <?php adoration_schedule(); ?>
-		  </div>
-		  
-		  <div class="wrapper-section" id="content">
-  			<section>
-  				<div>
-  					<p>First thing</p>
-  				</div>
-  				<div>
-  					<p>Second thing</p>
-  				</div>
-  				<div>
-  					<p>Some stuff here</p>
-  				</div>
-  			</section>
-  			<section>
-  				<div>
-  					<p>First thing</p>
-  				</div>
-  				<div>
-  					<p>Second thing</p>
-  				</div>
-  				<div>
-  					<p>Some stuff here</p>
-  				</div>
-  			</section>
-  			<section>
-  				<div>
-  					<p>First thing</p>
-  				</div>
-  				<div>
-  					<p>Second thing</p>
-  				</div>
-  				<div>
-  					<p>Some stuff here</p>
-  				</div>
-  			</section>
-  			<section>
-  				<div>
-  					<p>First thing</p>
-  				</div>
-  				<div>
-  					<p>Second thing</p>
-  				</div>
-  				<div>
-  					<p>Some stuff here</p>
-  				</div>
-  			</section>
-  			<section>
-  				<div>
-  					<p>First thing</p>
-  				</div>
-  				<div>
-  					<p>Second thing</p>
-  				</div>
-  				<div>
-  					<p>Some stuff here</p>
-  				</div>
-  			</section>
-        <img src="http://2.bp.blogspot.com/_5WUZDXTJTFw/TH09q1EL8HI/AAAAAAAAB40/VK_m16Uf39g/s1600/Latin+Mass+Easter+2010+029.jpg"/>
-		  </div>
-		  <footer>
-    		<div class="page">
-    			<p>&copy; 2013 St. Francis de Sales Parish</p>
-    		</div>
-   		</footer>
 		</div>
+		
+		<?php include $inc.'footer.php'; ?>
+		
 		<div id="nav-mobile">
 			<ul class="page">
 				<li>
-					<a href="#">Sacraments</a>
+					<a href="/sacraments/">Sacraments</a>
 				</li>
 				<li>
-					<a href="#">Ministries</a>
+					<a href="/ministries/">Ministries</a>
 				</li>
 				<li>
-					<a href="#">Resources</a>
+					<a href="/resources/">Resources</a>
 				</li>
 				<li>
-					<a href="#">Giving</a>
+					<a href="/giving/">Giving</a>
 				</li>
 				<li>
-					<a href="#">About</a>
+					<a href="/about/">About</a>
 				</li>
 				<li>
-					<a href="#">Contact</a>
+					<a href="/contact/">Contact</a>
 				</li>
 			</ul>
 		</div>
 		<script>
-			$('body').backstretch("images/background.jpg");
+			var bs = false;
+			var image = "/stfrancisdesales/images/" + "<?php echo $_SESSION['backgroundImage']; ?>" + ".jpg";
+			toggleBackstretch( 480, image );
+			
+			$(window).on('resize',function(){
+			    toggleBackstretch( 480, image );
+			});
+			
+			function toggleBackstretch( breakpoint, src ){
+			
+			    if( $(window).width() > breakpoint && !bs ){
+			         $('#background-wrap').backstretch(src);
+			         bs = !bs;
+			    }
+			
+			    else if(bs){
+			         $('#background-wrap').backstretch('destroy');
+			         bs = !bs;
+			    }
+			}
 		</script>
 	</body>
 </html>
