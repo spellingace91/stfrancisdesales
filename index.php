@@ -168,20 +168,20 @@
 		<script>
 			var bs = false;
 			var image = "/stfrancisdesales/images/" + "<?php echo $_SESSION['backgroundImage']; ?>" + ".jpg";
-			toggleBackstretch( 480, image );
+			toggleBackstretch( 768, image );
 			
 			$(window).on('resize',function(){
-			    toggleBackstretch( 480, image );
+			    toggleBackstretch( 768, image );
 			});
 			
 			function toggleBackstretch( breakpoint, src ){
 			
-			    if( $(window).width() > breakpoint && !bs ){
+			    if( $(window).width() > breakpoint ){
 			         $('#background-wrap').backstretch(src);
 			         bs = !bs;
 			    }
 			
-			    else if(bs){
+			    else if($(window).width() < breakpoint){
 			         $('#background-wrap').backstretch('destroy');
 			         bs = !bs;
 			    }
