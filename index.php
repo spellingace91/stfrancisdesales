@@ -38,7 +38,7 @@
 	        	<section>
 		        	<div id="calendar">
 		        		<div class="calendar-header">
-		        			<h2>February - March</h2>
+		        			<h2>April</h2>
 		        		</div>
 		        		<div class="calendar-item">
 		        			<div class="calendar-item-content">
@@ -46,7 +46,7 @@
 			        				<h2><span>THU</span></h2>
 			        			</div>
 			        			<div>
-				        			<h3>27</h3>
+				        			<h3>3</h3>
 			        			</div>
 		        			</div>
 		        			<ul>
@@ -61,7 +61,7 @@
 				        			<h2><span>FRI</span></h2>
 				        		</div>
 				        		<div>
-				        			<h3>28</h3>
+				        			<h3>4</h3>
 				        		</div>
 			        		</div>
 				        		<ul>
@@ -79,7 +79,7 @@
 				        			<h2><span>SAT</span></h2>
 				        		</div>
 				        		<div>
-				        			<h3>1</h3>
+				        			<h3>5</h3>
 				        		</div>
 			        		</div>
 				        		<ul>
