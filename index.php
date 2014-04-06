@@ -143,7 +143,8 @@
 		
 		<?php include $inc.'footer.php'; ?>
 		
-		<div id="nav-mobile">
+		<!--
+<div id="nav-mobile">
 			<ul class="page">
 				<li>
 					<a href="/sacraments/">Sacraments</a>
@@ -165,6 +166,7 @@
 				</li>
 			</ul>
 		</div>
+-->
 		<script>
 			var bs = false;
 			var image = "/stfrancisdesales/images/" + "<?php echo $_SESSION['backgroundImage']; ?>" + ".jpg";

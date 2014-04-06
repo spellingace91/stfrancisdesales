@@ -371,10 +371,6 @@ padding-left:	45px;
 	border-left: 2px solid #878787;
 }
 
-.calendar-item ul li {
-	margin-bottom: 3px;
-}
-
 .calendar-item ul li em {
 	font-weight: bold;
 }
@@ -530,6 +526,10 @@ footer span {
 	
 	.calendar-item ul {
 		padding-left: 25px;
+	}
+	
+	.calendar-item ul li {
+		margin-bottom: 10px;
 	}
 	
 	.tel {
@@ -727,6 +727,10 @@ padding-top: 5em;
 	.calendar-item ul {
 		padding-left: 32px;
 		margin-left: 57px;
+	}
+	
+	.calendar-item ul li {
+		margin-bottom: 3px;
 	}
 	
 	#nav-mobile {
