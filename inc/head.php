@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="/stfrancisdesales/css/layout.css" />
 -->
 		
-		<link type="text/css" rel="stylesheet" href="min/b=stfrancisdesales/css&f=reset.css,skeleton.css,base.css,layout.css" />
+		<link type="text/css" rel="stylesheet" href="/stfrancisdesales/min/b=stfrancisdesales/css&f=reset.css,skeleton.css,base.css,layout.css" />
 		
 		<?php include $inc.'functions.php'; ?>
 		
@@ -27,4 +27,4 @@
 <script src="/stfrancisdesales/js/backstretch.js"></script>
 		<script src="/stfrancisdesales/js/functions.js"></script>
 -->
-<script type="text/javascript" src="min/b=stfrancisdesales/js&amp;f=backstretch.js,functions.js"></script>
+<script type="text/javascript" src="/stfrancisdesales/min/b=stfrancisdesales/js&amp;f=backstretch.js,functions.js"></script>
