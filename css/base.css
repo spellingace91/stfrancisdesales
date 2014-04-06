@@ -24,7 +24,11 @@ body {
 }
 
 .wrapper-box {
-	
+	border-radius: 4px;
+}
+
+#content {
+	border-radius: 4px;
 }
 
 .schedule {
@@ -495,6 +499,7 @@ padding-left:	45px;
 }
 
 footer {
+	background-color: #232323;
 	padding: 25px 0;
 	margin-bottom: 30px;
 }
@@ -538,6 +543,16 @@ footer span {
 }
 
 @media (max-width: 767px) and (min-width: 320px) {
+	#background-wrap {
+		background: #7E7E76 !important;
+		z-index: 0;
+	}
+	
+	#bottom .bottom-section, #content,
+	#times .columns  {
+		margin: 25px 0;
+	}
+
 	.calendar-item ul {
 		border-left: none;
 	}
@@ -684,10 +699,6 @@ padding-top: 5em;
 		margin-right: 0;
 	}
 	
-	#content {
-		border-radius: 4px;
-	}
-	
 	.calendar-item div, .calendar-item h3 {
 		float: left;
 		position: relative;
@@ -720,16 +731,6 @@ padding-top: 5em;
 	
 	#nav-mobile {
 		display: none;
-	}
-	
-	/*
-#parish-info {
-		max-width: 743px;
-	}
-*/
-	
-	footer{
-		border-radius: 4px;
 	}
 }
 
