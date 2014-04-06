@@ -13,6 +13,9 @@
 		<link rel="stylesheet" href="/stfrancisdesales/css/base.css" />
 		<link rel="stylesheet" href="/stfrancisdesales/css/skeleton.css" />
 		<link rel="stylesheet" href="/stfrancisdesales/css/layout.css" />
+		<?php //Custom style sheets
+			if (isset($customss)){echo '<link rel="stylesheet" href="/stfrancisdesales/css/'.$customss.'.css" />';}
+		?>
 		
 		<!-- <link type="text/css" rel="stylesheet" href="/stfrancisdesales/min/b=stfrancisdesales/css&f=reset.css,skeleton.css,base.css,layout.css" /> -->
 		
