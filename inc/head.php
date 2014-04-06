@@ -13,6 +13,9 @@
 		<link rel="stylesheet" href="/stfrancisdesales/css/base.css" />
 		<link rel="stylesheet" href="/stfrancisdesales/css/skeleton.css" />
 		<link rel="stylesheet" href="/stfrancisdesales/css/layout.css" />
+		<?php //Custom style sheets
+			if (isset($customss)){echo '<link rel="stylesheet" href="/stfrancisdesales/css/'.$customss.'.css" />';}
+		?>
 		
 		<?php include $inc.'functions.php'; ?>
 		
