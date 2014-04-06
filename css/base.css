@@ -324,7 +324,7 @@ section p {
 }
 
 .calendar-item h2 {
-	font-family: 'Helvetica';
+	font-family: Helvetica, Arial, sans-serif;
 	color: #878787;
 	font-size: 14px;
 	line-height: 14px;
@@ -341,7 +341,7 @@ section p {
 }
 
 .calendar-item h3 {
-	font-family: 'Helvetica Neue';
+	font-family: 'Helvetica Neue', Arial, sans-serif;
 	color: #9A2828 /* #D95B1B */;
 	font-size: 46px;
 	font-weight: bold;
