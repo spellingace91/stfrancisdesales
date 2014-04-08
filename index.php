@@ -181,7 +181,7 @@
 			function toggleBackstretch( breakpoint, src ){
 			
 			    if( $(window).width() > breakpoint ){
-			         $('#background-wrap').backstretch(src);
+			         $('#background-wrap').backstretch(src, {speed: 1000});
 			         bs = !bs;
 			    }
 			
