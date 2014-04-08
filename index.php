@@ -1,6 +1,8 @@
 <?php
 	error_reporting(E_ERROR | E_WARNING | E_PARSE);
 	
+	require_once('inc/calendar.php');
+	
 	session_start();
 	
 	if (isset($_SESSION['backgroundImage'])) {
@@ -38,7 +40,7 @@
 	        	<section>
 		        	<div id="calendar">
 		        		<div class="calendar-header">
-		        			<h2>April</h2>
+		        			<h2><?php getMonth(); ?></h2>
 		        		</div>
 		        		<div class="calendar-item">
 		        			<div class="calendar-item-content">
