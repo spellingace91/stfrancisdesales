@@ -14,3 +14,8 @@
 		$i++;
 	}
 ?>
+
+<div id="adobe-reader">
+	<p>To view PDF files, you need the free Adobe Reader. Click below to download.</p>
+	<a href="http://get.adobe.com/reader"></a>
+</div>

@@ -1,3 +1,22 @@
+#content h1 {
+	text-align: center;
+	font-size: 150%;
+	margin-bottom: 50px;
+}
+
+#content {
+	text-align: center;
+}
+
 .bulletin-link {
 	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+	display: inline-block;
+	margin-bottom: 25px;
+	text-align: center;
+	color: #2B4E68;
+	font-size: 20px;
+}
+
+.bulletin-link:hover {
+	text-decoration: underline;
 }

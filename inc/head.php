@@ -25,5 +25,6 @@
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script src="/stfrancisdesales/js/backstretch.js"></script>
+		<script src="/stfrancisdesales/js/fancySelect.js"></script>
 		<script src="/stfrancisdesales/js/functions.js"></script>
 <!-- <script type="text/javascript" src="/stfrancisdesales/min/b=stfrancisdesales/js&amp;f=backstretch.js,functions.js"></script> -->

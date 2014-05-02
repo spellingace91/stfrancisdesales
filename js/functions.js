@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	$('select').fancySelect();
+
 	drawBorders();
 
 	$(window).on('resize', function() {

@@ -1,4 +1,5 @@
 <?php
+$customss = 'giving';
 $path = dirname($_SERVER['PHP_SELF']);
 $path_array = explode('/', $path);
 $title = ucwords(str_replace("-", " ", end($path_array)));

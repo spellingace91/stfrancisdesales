@@ -50,7 +50,7 @@ echo $decoded->items[1]->summary . "<br/>";
 	echo date(DATE_RFC3339);
 */
 	foreach($decoded->items as $key => $value) {
-		echo "<h2>"  . date("g:i a", strtotime($value->start->dateTime)) . "</h2>";
+		echo "<h2>" . $value->start->dateTime . date("g:i a", strtotime($value->start->dateTime)) . " - " . $value->summary . "</h2>";
 		
 		/*
 foreach ($value as $k => $v) {
