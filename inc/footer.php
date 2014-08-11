@@ -81,7 +81,7 @@
 <footer>
 	<div class="container">
 		<div class="sixteen columns">
-			<p class="thirteen columns alpha">
+			<p class="sixteen columns alpha">
 				&copy; 
 				<?php 
 					echo date('Y');
@@ -92,6 +92,8 @@
 				<span>•</span>  
 				P: <a href="tel:1-520-885-5908" class="tel">520-885-5908</a> 
 				<span>•</span> F: 520-885-3109
+				<span>•</span>
+				<a href="mailto:webmaster@saintfrancisdesalestucson.com">Email webmaster</a>
 			</p>
 		</div>
 	</div>

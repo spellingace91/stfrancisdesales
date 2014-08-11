@@ -4,7 +4,7 @@
 				<div class="dropdown five columns">
 					<label>General</label>
 					<select id="general">
-						<option value="">Pick something</option>
+						<option value="none">–</option>
 						<option>Ordinary Parish Support</option>
 						<option>Building Maintenance/Capital Improvement</option>
 						<option>St. Francis de Sales Youth Group</option>
@@ -15,6 +15,7 @@
 				<div class="dropdown five columns">
 					<label>Holy Days</label>
 					<select id="holy-days">
+						<option value="none">–</option>
 						<option value="christmas">Christmas</option>
 						<option value="easter">Easter</option>
 						<option>Solemnity of Mary, Mother of God</option>
@@ -29,6 +30,7 @@
 				<div class="dropdown five columns">
 					<label>Special</label>
 					<select id="special">
+						<option value="none">–</option>
 						<option>Diocesan Priests' Retirement Fund</option>
 						<option>Catholic Relief Services</option>
 						<option>Diocesan Catholic Schools</option>

@@ -460,13 +460,13 @@ padding-left:	45px;
 	padding: 5px 0;
 }
 
-#bottom li > a {
+#bottom li > a, footer a {
 	font-family: 'Source Sans Pro';
 	font-size: 14px;
 	color: #A5A5A4;
 }
 
-#bottom li > a:hover {
+#bottom li > a:hover, footer a:hover {
 	color: #fff;
 }
 
@@ -555,6 +555,11 @@ footer span {
 
 	.calendar-item ul {
 		border-left: none;
+	}
+	
+	footer span {
+		display: block;
+		visibility: hidden;
 	}
 }
 

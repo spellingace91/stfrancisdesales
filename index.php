@@ -1,5 +1,5 @@
 <?php
-	error_reporting(E_ERROR | E_WARNING | E_PARSE);
+	error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE | E_COMPILE_ERROR);
 	
 	require_once('inc/calendar.php');
 	
@@ -14,6 +14,12 @@
 		$backgroundImage = $images[floor(mt_rand() / mt_getrandmax() * count($images))];
 		$_SESSION['backgroundImage'] = $backgroundImage;
 	}
+	
+	$calendar = new Calendar;
+	
+	$today = strtotime('today midnight');
+	$first_day = strtotime('+1 days midnight');
+	$second_day = strtotime('+2 days midnight');
 ?>
 
 <!DOCTYPE html>
@@ -40,52 +46,59 @@
 	        	<section>
 		        	<div id="calendar">
 		        		<div class="calendar-header">
-		        			<h2><?php getMonth(); ?></h2>
+		        			<h2><?php $calendar->getMonth(); ?></h2>
 		        		</div>
 		        		<div class="calendar-item">
 		        			<div class="calendar-item-content">
 			        			<div>
-			        				<h2><span>THU</span></h2>
+			        				<h2><span><?php $calendar->getWeekDay($first_day); ?></span></h2>
 			        			</div>
 			        			<div>
-				        			<h3>3</h3>
+				        			<h3><?php $calendar->getDay($today); ?></h3>
 			        			</div>
 		        			</div>
 		        			<ul>
-			        			<li><a href="#"><em>9:30 am</em> - Craft Group</a></li>
+			        			<!--
+<li><a href="#"><em>9:30 am</em> - Craft Group</a></li>
 			        			<li><a href="#"><em>4:00 pm</em> - Kindergarten & Elem. Religious Ed</a></li>
 			        			<li><a href="#"><em>7:00 pm</em> - Sr./Jr. High School Religious Ed</a></li>
+-->
+										<?php $calendar->getEvents($today); ?>
 			        		</ul>
 		        		</div>
 								<div class="calendar-item">
 			        		<div class="calendar-item-content">
 				        		<div>
-				        			<h2><span>FRI</span></h2>
+				        			<h2><span><?php $calendar->getWeekDay($first_day); ?></span></h2>
 				        		</div>
 				        		<div>
-				        			<h3>4</h3>
+				        			<h3><?php $calendar->getDay($first_day); ?></h3>
 				        		</div>
 			        		</div>
 				        		<ul>
-			        			<li><a href="#"><em>9:00 am</em> - Centering Group</a></li>
+			        			<!--
+<li><a href="#"><em>9:00 am</em> - Centering Group</a></li>
 			        			<li><a href="#"><em>10:00 am</em> - Bible Discussion Group</a></li>
 			        			<li><a href="#"><em>7:00 pm</em> - OCIA</a></li>
 			        			<li><a href="#"><em>7:00 pm</em> - OCIA</a></li>
 			        			<li><a href="#"><em>7:00 pm</em> - OCIA</a></li>
 			        			<li><a href="#"><em>7:00 pm</em> - OCIA</a></li>
+-->
+								<?php $calendar->getEvents($first_day); ?>
 			        		</ul>
 		        		</div>
 		        		<div class="calendar-item">
 			        		<div class="calendar-item-content">
 				        		<div>
-				        			<h2><span>SAT</span></h2>
+				        			<h2><span><?php $calendar->getWeekDay($second_day); ?></span></h2>
 				        		</div>
 				        		<div>
-				        			<h3>5</h3>
+				        			<h3><?php $calendar->getDay($second_day); ?></h3>
 				        		</div>
 			        		</div>
 				        		<ul>
-			        			<li><a href="#"><em>10:00 am</em> - New Testament Class</a></li>
+<!-- 			        			<li><a href="#"><em>10:00 am</em> - New Testament Class</a></li> -->
+									<?php $calendar->getEvents($second_day); ?>
 			        		</ul>
 		        		</div>
 		        	</div>
