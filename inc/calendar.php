@@ -51,14 +51,14 @@ class Calendar
 	
 	/**
 	 *	Gets the current month.
-	 *	If another month begins in the next three days,
-	 *	display the current month with that one, connected by a hyphen.
 	 */
 	function getMonth() {
 		
 		$current_month = date('F', strtotime('today midnight'));
 		$cutoff_month = date('F', strtotime('+3 days midnight'));
-		
+	
+		// If another month begins in the next three days, 
+		// display the current month with that one, connected by a hyphen.
 		echo (strcmp($current_month, $cutoff_month) == 0) ?
 							$current_month : 
 							$current_month . " - " . $cutoff_month;
@@ -85,12 +85,14 @@ class Calendar
 	public function getEvents($date) {
 		$day = date("d", $date);
 	
+		// loop through all events in the calendar for the given date
 		foreach(self::$decoded->items as $key => $value) {
+			
 			$event_day = date("d", strtotime($value->start->dateTime));
+			
+			// if there's an event the same day as the given date, display it on the calendar
 			if ($day === $event_day) {
-/* 				echo "<h2>" . date("g:i a", strtotime($value->start->dateTime)) . " - " . $value->summary . "</h2>"; */
-
-					echo "<li><a href=\"#\"><em>" . date("g:i a", strtotime($value->start->dateTime)). "</em> - " . $value->summary . "</a></li>";
+				echo "<li><a href=\"#\"><em>" . date("g:i a", strtotime($value->start->dateTime)). "</em> - " . $value->summary . "</a></li>";
 			}
 		}
 	}

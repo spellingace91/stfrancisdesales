@@ -15,8 +15,10 @@
 		$_SESSION['backgroundImage'] = $backgroundImage;
 	}
 	
+	// instantiate a new calendar
 	$calendar = new Calendar;
 	
+	// set up days for the calendar of events
 	$today = strtotime('today midnight');
 	$first_day = strtotime('+1 days midnight');
 	$second_day = strtotime('+2 days midnight');
@@ -58,15 +60,10 @@
 			        			</div>
 		        			</div>
 		        			<ul>
-			        			<!--
-<li><a href="#"><em>9:30 am</em> - Craft Group</a></li>
-			        			<li><a href="#"><em>4:00 pm</em> - Kindergarten & Elem. Religious Ed</a></li>
-			        			<li><a href="#"><em>7:00 pm</em> - Sr./Jr. High School Religious Ed</a></li>
--->
-										<?php $calendar->getEvents($today); ?>
+								<?php $calendar->getEvents($today); ?>
 			        		</ul>
 		        		</div>
-								<div class="calendar-item">
+						<div class="calendar-item">
 			        		<div class="calendar-item-content">
 				        		<div>
 				        			<h2><span><?php $calendar->getWeekDay($first_day); ?></span></h2>
@@ -75,35 +72,26 @@
 				        			<h3><?php $calendar->getDay($first_day); ?></h3>
 				        		</div>
 			        		</div>
-				        		<ul>
-			        			<!--
-<li><a href="#"><em>9:00 am</em> - Centering Group</a></li>
-			        			<li><a href="#"><em>10:00 am</em> - Bible Discussion Group</a></li>
-			        			<li><a href="#"><em>7:00 pm</em> - OCIA</a></li>
-			        			<li><a href="#"><em>7:00 pm</em> - OCIA</a></li>
-			        			<li><a href="#"><em>7:00 pm</em> - OCIA</a></li>
-			        			<li><a href="#"><em>7:00 pm</em> - OCIA</a></li>
--->
+				        	<ul>
 								<?php $calendar->getEvents($first_day); ?>
-			        		</ul>
-		        		</div>
-		        		<div class="calendar-item">
-			        		<div class="calendar-item-content">
-				        		<div>
-				        			<h2><span><?php $calendar->getWeekDay($second_day); ?></span></h2>
-				        		</div>
-				        		<div>
-				        			<h3><?php $calendar->getDay($second_day); ?></h3>
-				        		</div>
-			        		</div>
-				        		<ul>
-<!-- 			        			<li><a href="#"><em>10:00 am</em> - New Testament Class</a></li> -->
+							</ul>
+						</div>
+			        	<div class="calendar-item">
+				       		<div class="calendar-item-content">
+					        	<div>
+					        		<h2><span><?php $calendar->getWeekDay($second_day); ?></span></h2>
+					        	</div>
+					        	<div>
+					        		<h3><?php $calendar->getDay($second_day); ?></h3>
+					        	</div>
+				        	</div>
+					        <ul>
 									<?php $calendar->getEvents($second_day); ?>
-			        		</ul>
-		        		</div>
-		        	</div>
-	        	<section>
-					</div>
+				        	</ul>
+			        	</div>
+						</div>
+					</section>
+				</div>
 					
 			  	<div class="five columns omega" id="times">
 				      <div class="five columns alpha omega schedule wrapper-section wrapper-box" id="mass">

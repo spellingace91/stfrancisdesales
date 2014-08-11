@@ -381,6 +381,8 @@ padding-left:	45px;
 	color: #2B4E68 /* #9A2828 */;
 	position: relative;
 	left: -0.3em;
+	width: 340px;
+	display: block;
 }
 
 .calendar-item ul li a:hover {
