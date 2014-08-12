@@ -38,111 +38,114 @@
 			<div class="container" id="content-wrap">
 				<div class="sixteen columns">
 				  
-				  <!-- <div class="wrapper-section content-width" id="content"> -->
-				  <div class="eleven columns alpha" id="content">
+				<!-- <div class="wrapper-section content-width" id="content"> -->
+				<div class="eleven columns alpha" id="content">
 	        	<!-- <img src="http://2.bp.blogspot.com/_5WUZDXTJTFw/TH09q1EL8HI/AAAAAAAAB40/VK_m16Uf39g/s1600/Latin+Mass+Easter+2010+029.jpg"/> -->
-	        	<section>
-	        		<h1>Welcome!</h1>
-	        	</section>
+	        		<section>
+	        			<h1>Welcome!</h1>
+					</section>
 	        	
-	        	<section>
-		        	<div id="calendar">
-		        		<div class="calendar-header">
-		        			<h2><?php $calendar->getMonth(); ?></h2>
-		        		</div>
-		        		<div class="calendar-item">
-		        			<div class="calendar-item-content">
-			        			<div>
-			        				<h2><span><?php $calendar->getWeekDay($first_day); ?></span></h2>
-			        			</div>
-			        			<div>
-				        			<h3><?php $calendar->getDay($today); ?></h3>
-			        			</div>
-		        			</div>
-		        			<ul>
-								<?php $calendar->getEvents($today); ?>
-			        		</ul>
-		        		</div>
-						<div class="calendar-item">
-			        		<div class="calendar-item-content">
-				        		<div>
-				        			<h2><span><?php $calendar->getWeekDay($first_day); ?></span></h2>
-				        		</div>
-				        		<div>
-				        			<h3><?php $calendar->getDay($first_day); ?></h3>
-				        		</div>
+		        	<section>
+			        	<div id="calendar">
+			        		<div class="calendar-header">
+			        			<h2><?php $calendar->getMonth(); ?></h2>
 			        		</div>
-				        	<ul>
-								<?php $calendar->getEvents($first_day); ?>
-							</ul>
-						</div>
-			        	<div class="calendar-item">
-				       		<div class="calendar-item-content">
-					        	<div>
-					        		<h2><span><?php $calendar->getWeekDay($second_day); ?></span></h2>
+			        		<div class="calendar-item">
+			        			<div class="calendar-item-content">
+				        			<div>
+				        				<h2><span><?php $calendar->getWeekDay($first_day); ?></span></h2>
+				        			</div>
+				        			<div>
+					        			<h3><?php $calendar->getDay($today); ?></h3>
+				        			</div>
+			        			</div>
+			        			<ul>
+									<?php $calendar->getEvents($today); ?>
+				        		</ul>
+			        		</div>
+							<div class="calendar-item">
+				        		<div class="calendar-item-content">
+					        		<div>
+					        			<h2><span><?php $calendar->getWeekDay($first_day); ?></span></h2>
+					        		</div>
+					        		<div>
+					        			<h3><?php $calendar->getDay($first_day); ?></h3>
+					        		</div>
+				        		</div>
+					        	<ul>
+									<?php $calendar->getEvents($first_day); ?>
+								</ul>
+							</div>
+				        	<div class="calendar-item">
+					       		<div class="calendar-item-content">
+						        	<div>
+						        		<h2><span><?php $calendar->getWeekDay($second_day); ?></span></h2>
+						        	</div>
+						        	<div>
+						        		<h3><?php $calendar->getDay($second_day); ?></h3>
+						        	</div>
 					        	</div>
-					        	<div>
-					        		<h3><?php $calendar->getDay($second_day); ?></h3>
-					        	</div>
+						        <ul>
+										<?php $calendar->getEvents($second_day); ?>
+					        	</ul>
 				        	</div>
-					        <ul>
-									<?php $calendar->getEvents($second_day); ?>
-				        	</ul>
-			        	</div>
+				        	<div class="calendar-footer">
+				        		<h4><a href="#">full calendar &raquo;</a></h4>
+				        	</div>
 						</div>
 					</section>
 				</div>
-					
-			  	<div class="five columns omega" id="times">
-				      <div class="five columns alpha omega schedule wrapper-section wrapper-box" id="mass">
-								<h2>Masses</h2>
-								<div class="times-content">
-									<div class="day" id="saturday">
-										<p class="day-of-the-week">Saturday</p>
-										<div class="times"
-											<p>8:00 am</p>
-											<p>5:00 pm <span>(Anticipated)</span></p>
-										</div>
-									</div>
-								
-									<div class="day" id="sunday">
-										<p class="day-of-the-week">Sunday</p>
-										<div class="times">
-											<p>7:30 am</p>
-											<p>9:30 am</p>
-											<p>11:30 am</p>
-											<p>5:00 pm</p>
-										</div>
-									</div>
+						
+				<div class="five columns omega" id="times">
+					<div class="five columns alpha omega schedule wrapper-section wrapper-box" id="mass">
+						<h2>Masses</h2>
+						<div class="times-content">
+							<div class="day" id="saturday">
+								<p class="day-of-the-week">Saturday</p>
+								<div class="times"
+									<p>8:00 am</p>
+									<p>5:00 pm <span>(Anticipated)</span></p>
+								</div>
+							</div>
 									
-									<div class="day" id="mon-fri">
-										<p class="day-of-the-week">Monday - Friday</p>
-										<div class="times"
-											<p>6:30 am <span>(Communion Service)</span></p>
-											<p>8:00 am</p>
-										</div>
-									</div>
+							<div class="day" id="sunday">
+								<p class="day-of-the-week">Sunday</p>
+								<div class="times">
+									<p>7:30 am</p>
+									<p>9:30 am</p>
+									<p>11:30 am</p>
+									<p>5:00 pm</p>
+								</div>
+							</div>
+										
+							<div class="day" id="mon-fri">
+								<p class="day-of-the-week">Monday - Friday</p>
+								<div class="times"
+									<p>6:30 am <span>(Communion Service)</span></p>
+									<p>8:00 am</p>
+								</div>
+							</div>
+									
+						</div>
+					</div>
 								
+					<div class="five columns alpha omega schedule wrapper-section wrapper-box" id="reconciliation">
+						<h2>Reconciliation</h2>
+						<div class="times-content">
+							<div class="day">
+								<p class="day-of-the-week">Saturdays</p>
+								<div class="times">
+									<p>3:30 pm</p>
+									<p>or by appointment</p>
 								</div>
 							</div>
-							
-							<div class="five columns alpha omega schedule wrapper-section wrapper-box" id="reconciliation">
-								<h2>Reconciliation</h2>
-								<div class="times-content">
-									<div class="day">
-										<p class="day-of-the-week">Saturdays</p>
-										<div class="times">
-											<p>3:30 pm</p>
-											<p>or by appointment</p>
-										</div>
-									</div>
-								</div>
-							</div>
-				  </div>
-			  
+						</div>
+					</div>
 				</div>
+				  
 			</div>
 		</div>
+	</div>
 		
 		<?php include $inc.'footer.php'; ?>
 		

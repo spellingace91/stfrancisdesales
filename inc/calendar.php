@@ -92,7 +92,7 @@ class Calendar
 			
 			// if there's an event the same day as the given date, display it on the calendar
 			if ($day === $event_day) {
-				echo "<li><a href=\"#\"><em>" . date("g:i a", strtotime($value->start->dateTime)). "</em> - " . $value->summary . "</a></li>";
+				echo "<li><span><em>" . date("g:i a", strtotime($value->start->dateTime)). "</em> - " . $value->summary . "</span></li>";
 			}
 		}
 	}
